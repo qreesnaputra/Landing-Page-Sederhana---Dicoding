@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ * {
+   box-sizing: border-box;
+ }
+
+header {
+   display: inline;
+}
+
+body {
+   font-family:'Quicksand' , sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+#content {
+   float: left;
+   width: 75%;
+}
+
+h2 {
+   color: black;
+   font-family: 'Bebas Neue', 'QuickSand';
+   letter-spacing: 10px;
+   padding: 10px;
+}
+  
+h3 {
+   color: black;
+   padding-left: 10px;
+}
+
+table {
+   padding-bottom: 10px;
+   padding-left: 10px;
+}
+
+.logo {
+   margin-top: 5px;
+   margin-left: 20px;
+   height: 9%;
+   width: 9%;
+}
+
+nav {
+   background-color:black;
+   overflow: hidden;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+nav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   line-height: 25px;
+   font-size: 18px;
+   border-radius: 4px;
+}
+
+nav a:hover {
+   color:#000;
+   background-color: white;
+}
+
+nav li {
+   display: inline-flex;
+   margin-right: 20px;
+   list-style-type: none;
+}
+
+.navright {
+   float: right;
+}
+
+.jumbotron {
+   text-align: center;
+   color: white;  
+   background-image: url("../image/IMG_1845.JPG");
+   background-size: cover;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.jumbotron h1, .jumbotron p {
+   font-family: 'Bebas Neue', 'QuickSand';
+   letter-spacing: 10px;
+}
+
+.featured-image-header {
+   object-fit: cover;
+   width: 100%;
+   height: 50%;
+   background-color: black;
+}
+
+.featured-image {
+   width: 100%;
+   max-height: 300px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.flex-container-column {
+   display: flex;
+   /* properti pendukung */
+   flex-direction: column;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.flex-container-row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.button {
+   flex-basis: 25%;
+   /* properti pendukung */
+   padding: 10px;
+   font-size: 1em;
+   text-align: center;
+   background: transparent;
+   cursor: pointer;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.sale {
+   color: red;
+}
+
+footer {
+   padding: 5px;
+   color: white;
+   background-color: black;
+   text-align: center;
+   font-weight: bold;
+}
+
+footer p {
+   font-size: 12px;
+   padding: 0px;
+}
+
+footer h2 {
+   font-size: 20px;
+}
+
+footer h4 {
+   font-size: 12px;
+}
+
+.footer-container {
+   display: flex;
+   /* Properti lainnya */
+   width: 800px;
+   height: 250px;
+   border-radius: 10px;
+   margin: 0 auto;
+}
+
+.box {
+   flex-grow: 1;
+   /* properti lainnya */
+   margin: 5px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+.footer-container .box  h2{
+   color: white;
+   padding: 10x;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+}
+
+.profile header {
+   text-align: center;
+}
+
+.profile img {
+   width: 200px;
+   border-radius: 50%;
+}
+
+.profile th img {
+   width: 16px;
+}
+
+
+@media screen and (max-width: 1000px) {
+   #content,
+   .footer-container,
+   .centered,
+   header,
+   aside{
+      width: 100%;
+      padding: 0;
+   }
+
+   nav img {
+      display: none;
+   }
+
+   .jumbotron {
+      background-size: cover;
+      height: 300px;
+   }
+
+   .button {
+      flex-basis: 50%;
+   }
+
+   .profile img {
+      width: 20%
+   }
+}
